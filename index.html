@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINHA AGENDA:  Modulo 08</title>
+    <link rel="stylesheet" href="index.css">            
+</head>
+<body>
+    <!--Container Principal-->
+    <div id="app_container">
+        <!--Cabeçalho-->
+        <header id="app_header">
+            <h1>MINHA AGENDA</h1>
+            <h2>Projeto 2: Módulo 8 - EBAC</h2>
+        </header>
+        <!--Formulario-->
+        <form id="app_form">
+            <!--Input-->
+            <input type="text" id="nome"
+            placeholder="Nome do Contato" onchange="onChangeBorder(this)">
+            <!--Input-->
+            <input type="tel" id="tel" placeholder="Número do Fone" onchange="onChangeBorder(this)">
+            <!--Button-->
+            <button type="submit">Adiciona Contato +</button>
+        </form>
+
+        <!--tabua-->
+        <div id="app_table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Número de Telefone</th>
+                    </tr>                
+                </thead>
+                <tbody id="t_body">
+                       
+                </tbody>
+                <tfoot >
+                    <tr>
+                        <td id="t_foot_quantidade">Quantidade: <span id="#footSpan">0</span></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        
+        <footer id="app_footer">
+            <p>
+                Desenvolvido por <b>Leyser Pinto</b> - all rights reserved - &copy; copyriht 2023 
+            </p>
+        </footer>
+    </div>
+    <!--p: Exibir Mesagem-->
+    <p id="mesagem">
+        Mesagem P
+    </p>
+    
+    <script src="index.js"></script>
+</body>
+</html>

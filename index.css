@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #EDEDED;
+    
+    overflow: hidden;
+    position: relative;
+}
+
+#mesagem{
+    position: absolute;
+    bottom:20%;
+    right: 5%;
+    width: 25rem;
+    height: 3.75rem;
+    padding: 0.625rem;
+    color: #DCDADA;
+    text-align: center;
+    transition: opacity .5s ease-in-out;
+}
+#app_container {
+    margin: 0 auto;
+    max-width: 614px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    padding: 5.687em 3.375em 0.625em 3.375em;
+    gap: 1.25em;
+}
+/**
+ * App Header: App Container Header Div
+ */
+#app_header {
+    width: 100%;
+    height: 9.125em;
+}
+/**
+ * App Header  H1 TAG
+ */
+#app_header>h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4em;
+    color: #0F0F0F;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0;
+}
+/**
+ * App Header  2 TAG
+ */
+#app_header>h2 {
+    font-weight: 500;
+    font-size: 2rem;
+    color: #AF58B1;
+    /*text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+}
+
+
+/*
+*INPUTS SIZES
+*/
+#app_form > input[type=text],input[type=tel],button{
+    padding: 0.3125em 0.625em;
+    width: 150px;
+    height:30px;
+    background: #FFFFFF;
+    border: 0;
+    outline: 0;
+}
+
+#app_form > button{
+    height: 2.1875rem;
+    background: #AF58B1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#app_table{
+height: 35vh;
+overflow-y: auto;
+}
+table{
+    width: 100%;
+border-spacing: 0px;
+}
+thead{
+    background-color: #AF58B1;
+    color: #FFF;
+    
+}
+thead tr, tbody tr{    
+    width: 100%; 
+    height: 45px;   
+    
+}
+thead tr > th,tbody > tr > td { 
+    width: 50%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: start;
+    color: #FFFFFF;
+    padding-left: 15px;
+}
+tbody > tr > td {
+    color: #000000;
+}
+tbody > :nth-child(even){
+    background: #DCDADA;
+}
+tbody > :nth-child(odd){
+    background: #EDEDED;
+}
+#footSpan{
+    font-weight: 600;
+    font-style: italic;
+    font-size: .8em;
+}
+
+
+
+footer p{
+    text-align: center;
+    font-size:.8em;
+    font-style: italic;
+
+}
